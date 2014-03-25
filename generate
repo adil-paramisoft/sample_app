@@ -1,0 +1,914 @@
+Script started on Tue 25 Mar 2014 12:19:47 PM IST
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m     [01;34mdb[0m       Gemfile.lock  [01;34mlib[0m  [01;34mpublic[0m    README.rdoc  [01;34mtmp[0m
+[01;34mbin[0m  config.ru  Gemfile  generate      [01;34mlog[0m  Rakefile  [01;34mtest[0m         [01;34mvendor[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ lsruby -vcd[Kruby -vls[K[Klsruby -vcd[Kruby -vvm help[Kuby -vgit initls[Kcd xmlparserls[Kcd Documents[K[K[K[K[K[K[K[K[K[K[K[Kscript/generate
+bash: script/generate: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ script/generate.script/generate\script/generate
+bash: .script/generate: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ .\script/generate[1Pscript/generate
+bash: .script/generate: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ .script/generate\script/generate[1Pscript/generate[K.script/generate\script/generate[2Pscript/generate.\script/generate[C[C[1Pscript/generate/script/generate
+bash: ./script/generate: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ ./script/generate
+bash: ./script/generate: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ r[Krails
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ application  Generate the Rails application code
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails -v
+Rails 4.0.4
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails -v[K[K[K[K[K[K[K[Kgenerate
+generate: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ generaterails -v[K[K[K[K[K[K[K[K./script/generate [K[Ke controller
+bash: ./script/generate: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails ger[Knerate
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/views_demo/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails generate 
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/views_demo/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails generate 
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/views_demo/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails generate [Krails generate [K./script/generate controller[14Prails generate[K
+Error: Command 'generat' not recognized
+^[OAUsage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ application  Generate the Rails application code
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails generate 
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/views_demo/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails generate [Ke [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./script/generate controllergenerate[Krails -v[K./script/generate[1Pscript/generate\script/generate[2Pscript/generatels[Kscript/generate.\script/generate[1Pscript/generate/script/generaterails[K -vgenerate./script/generate controllergenerate[Krgenerateagenerateigeneratelgeneratesgenerate
+railsgenerate: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ railsgenerate[C generate
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/views_demo/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ rails -v
+Rails 4.0.4
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ ruby -v
+ruby 2.0.0p451 (2014-02-24 revision 45167) [x86_64-linux]
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ ruby -v[1@ails[C[C[Cgenerate[1Pgenerate generate
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.5.0/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/views_demo/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:43:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/views_demo$ cd
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ 
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ cdrails generate
+Usage:
+  rails new APP_PATH [options]
+
+Options:
+  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+                                                         # Default: /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/bin/ruby
+  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+                                                         # Default: sqlite3
+  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+                                                         # Default: jquery
+  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+  -T, [--skip-test-unit], [--no-skip-test-unit]          # Skip Test::Unit files
+      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Rails options:
+  -h, [--help], [--no-help]        # Show this help message and quit
+  -v, [--version], [--no-version]  # Show Rails version number and quit
+
+Description:
+    The 'rails new' command creates a new Rails application with a default
+    directory structure and configuration at the path you specify.
+
+    You can specify extra command-line arguments to be used every time
+    'rails new' runs in the .railsrc configuration file in your home directory.
+
+    Note that the arguments specified in the .railsrc file don't affect the
+    defaults values shown above in this help message.
+
+Example:
+    rails new ~/Code/Ruby/weblog
+
+    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+    See the README in the newly created application to get going.
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ rails generatecd[Krails generatecd[K rails generatecd [Krails generatecd [Krails generate[K]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ rails generatte[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kcd [K[Kls
+No command 'cls' found, but there are 18 similar ones
+cls: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ ls
+[0m[01;34mDesktop[0m           [01;34mMusic[0m           [01;34mtest[0m
+[01;34mDocuments[0m         [01;34mPictures[0m        [01;34mVideos[0m
+[01;34mDownloads[0m         [01;34mPublic[0m          xmlparser.rb
+examples.desktop  [01;34mRubyMine-6.0.3[0m
+[01;34mlearning[0m          [01;34mTemplates[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ cd learning/ [A
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ sub l Gemfile
+No command 'subl' found, did you mean:
+ Command 'subs' from package 'libsubtitles-perl' (universe)
+ Command 'publ' from package 'atfs' (universe)
+subl: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ subll Gemfile[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K cd  first_app/
+bash: cd: first_app/: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ $ s ubl Gemfile
+$: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ ls
+[0m[01;34mviews_demo[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ Gem [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm file
+Gemfile: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ ls
+[0m[01;34mviews_demo[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ vi[K[Kcd  views_demo/
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/views_demoparamisoft@paramisoft-Latitude-D530:~/learning/viewss_demo$ cd
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ ls
+[0m[01;34mDesktop[0m           [01;34mMusic[0m           [01;34mtest[0m
+[01;34mDocuments[0m         [01;34mPictures[0m        [01;34mVideos[0m
+[01;34mDownloads[0m         [01;34mPublic[0m          xmlparser.rb
+examples.desktop  [01;34mRubyMine-6.0.3[0m
+[01;34mlearning[0m          [01;34mTemplates[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ l[Kcd learning/ [A
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ ls
+[0m[01;34msample_app[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ s[Kcd
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ cd s[K[K[K[Kcd ssa[K[Kample_ap p
+bash: cd: sample_app: No such file or directory
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ cd sample_appp[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kcd
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ ls
+[0m[01;34mDesktop[0m           [01;34mMusic[0m           [01;34mtest[0m
+[01;34mDocuments[0m         [01;34mPictures[0m        [01;34mVideos[0m
+[01;34mDownloads[0m         [01;34mPublic[0m          xmlparser.rb
+examples.desktop  [01;34mRubyMine-6.0.3[0m
+[01;34mlearning[0m          [01;34mTemplates[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~paramisoft@paramisoft-Latitude-D530:~$ cd learning/ [A
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ ls
+[0m[01;34msample_app[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learningparamisoft@paramisoft-Latitude-D530:~/learning$ s[Kcd  sample_app/
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ Gemfile
+Gemfile: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sampple_app$ bundle update
+[31mYou cannot specify the same gem twice with
+different version requirements.
+You specified: sqlite3 (>= 0) and sqlite3 (=
+1.3.8)[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sampple_app$ bundle update
+[31mYou cannot specify the same gem twice with
+different version requirements.
+You specified: sdoc (>= 0) and sdoc (= 0.3.20)[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sampple_app$ bundle update[C[C[C[C[C[C[C[C[C[6PGemfilebundle update
+Fetching gem metadata from https://rubygems.org/..........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.2.0)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.9.2)
+Using atomic (1.1.16)
+Using thread_safe (0.3.1)
+Using tzinfo (0.3.39)
+Using activesupport (4.0.4)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.4)
+Using coffee-script-source (1.7.0)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.19.1)
+Using railties (4.0.4)
+Using coffee-rails (4.0.1)
+Using hike (1.2.3)
+Installing jbuilder (1.0.2)
+Installing jquery-rails (3.0.4)
+Using json (1.8.1)
+Installing rdoc (3.12.2)
+Installing sass (3.3.4)
+Using tilt (1.4.1)
+Using sprockets (2.12.0)
+Using sprockets-rails (2.0.1)
+Installing sass-rails (4.0.1)
+Installing sdoc (0.3.20)
+Installing sqlite3 (1.3.8)
+Installing turbolinks (1.1.1)
+Installing uglifier (2.1.1)
+Using bundler (1.5.3)
+[32mYour bundle is updated![0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sampple_app$ bundle update[K[K[K[K[K[Kinstall
+Using rake (10.2.0)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.9.2)
+Using atomic (1.1.16)
+Using thread_safe (0.3.1)
+Using tzinfo (0.3.39)
+Using activesupport (4.0.4)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.4)
+Using coffee-script-source (1.7.0)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.19.1)
+Using railties (4.0.4)
+Using coffee-rails (4.0.1)
+Using hike (1.2.3)
+Using jbuilder (1.0.2)
+Using jquery-rails (3.0.4)
+Using json (1.8.1)
+Using rdoc (3.12.2)
+Using sass (3.3.4)
+Using tilt (1.4.1)
+Using sprockets (2.12.0)
+Using sprockets-rails (2.0.1)
+Using sass-rails (4.0.1)
+Using sdoc (0.3.20)
+Using sqlite3 (1.3.8)
+Using turbolinks (1.1.1)
+Using uglifier (2.1.1)
+Using bundler (1.5.3)
+[32mYour bundle is complete![0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sampple_app$ bundle install[K[K[K[K[K[K[Kshow
+Gems included by the bundle:
+  * actionpack (4.0.4)
+  * activesupport (4.0.4)
+  * atomic (1.1.16)
+  * builder (3.1.4)
+  * bundler (1.5.3)
+  * coffee-rails (4.0.1)
+  * coffee-script (2.2.0)
+  * coffee-script-source (1.7.0)
+  * erubis (2.7.0)
+  * execjs (2.0.2)
+  * hike (1.2.3)
+  * i18n (0.6.9)
+  * jbuilder (1.0.2)
+  * jquery-rails (3.0.4)
+  * json (1.8.1)
+  * minitest (4.7.5)
+  * multi_json (1.9.2)
+  * rack (1.5.2)
+  * rack-test (0.6.2)
+  * railties (4.0.4)
+  * rake (10.2.0)
+  * rdoc (3.12.2)
+  * sass (3.3.4)
+  * sass-rails (4.0.1)
+  * sdoc (0.3.20)
+  * sprockets (2.12.0)
+  * sprockets-rails (2.0.1)
+  * sqlite3 (1.3.8)
+  * thor (0.19.1)
+  * thread_safe (0.3.1)
+  * tilt (1.4.1)
+  * turbolinks (1.1.1)
+  * tzinfo (0.3.39)
+  * uglifier (2.1.1)
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sampple_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude--D530:~/learning/sample_app$ r ail[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr ails server
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/sample_app/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude--D530:~/learning/sample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ gem install execjs
+Successfully installed execjs-2.0.2
+Parsing documentation for execjs-2.0.2
+Installing ri documentation for execjs-2.0.2
+Done installing documentation for execjs after 0 seconds
+1 gem installed
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ gem install execjs[C[C[C[C[C[C[C[C[6Prails server
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/sample_app/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ rails server[C[C[C[C[C[C[C[Cgem install execjs[C[C[C[C[C[C[C[C[6Prails server[C[C[C[C[C[C[C[Cgem install execjs[C[C[C[C[C[C[C[C[6Prails server
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/sample_app/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ rails server[C[C[C[C[C[C[C[Cgem install execjs[C[C[C[C[C[C[C[C[6Prails server
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/sample_app/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplee_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_aapp$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$  [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_appp$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learnning/sample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/leaarning/sample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~~/learning/sample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude--D530:~/learning/sample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitudee-D530:~/learning/sample_app$  [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitudde-D530:~/learning/sample_appp$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latituude-D530:~/learning/sample_aapp$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Lattitude-D530:~/learning/saample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-LLatitude-D530:~/learninng/sample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Lattitude-D530:~/learning/saample_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latittude-D530:~/learning/samplee_app$ [K[A[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D5330:~/learning/sample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/llearning/sample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/ssample_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_appp$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ rails servergem install execjs[6Prails server[Krails server[K[K[K[K[K[K[K[K[K[K[K[Kcld[Ks
+No command 'cls' found, but there are 18 similar ones
+cls: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ clr
+No command 'clr' found, did you mean:
+ Command 'clm' from package 'mcl' (universe)
+ Command 'clp' from package 'coinor-libclp0' (universe)
+ Command 'cl' from package 'cl-launch' (universe)
+ Command 'cr' from package 'seesat5' (universe)
+ Command 'cyr' from package 'console-cyrillic' (universe)
+ Command 'cli' from package 'mono-runtime' (main)
+ Command 'csr' from package 'rheolef' (universe)
+clr: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ cls
+No command 'cls' found, but there are 18 similar ones
+cls: command not found
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ cle[K[K[Kreset
+[3g        H        H        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ se\[K[K[Krails server
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/execjs-2.0.2/lib/execjs.rb:4:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/uglifier-2.1.1/lib/uglifier.rb:3:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:76:in `block (2 levels) in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:72:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler/runtime.rb:61:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451@global/gems/bundler-1.5.3/lib/bundler.rb:131:in `require'
+	from /home/paramisoft/learning/sample_app/config/application.rb:7:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:74:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ rails server
+[31mGemfile syntax error:
+Could not find a JavaScript runtime. See ht...
+              ^
+/home/paramisoft/learning/sample_app/Gemfile:60: unknown regexp options - gthb
+/home/paramisoft/learning/sample_app/Gemfile:60: syntax error, unexpected keyword_for, expecting keyword_do or '{' or '('
+...thub.com/sstephenson/execjs for a list of available runtimes...
+...                               ^[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ rails server
+[31mGemfile syntax error:
+Could not find a JavaScript runtime. See ht...
+              ^
+/home/paramisoft/learning/sample_app/Gemfile:60: unknown regexp options - gthb
+/home/paramisoft/learning/sample_app/Gemfile:60: syntax error, unexpected keyword_for, expecting keyword_do or '{' or '('
+...thub.com/sstephenson/execjs for a list of available runtimes...
+...                               ^[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ rails server
+=> Booting WEBrick
+=> Rails 4.0.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configuration.rb:95:in `method_missing': undefined method `action_mailer' for #<Rails::Application::Configuration:0x00000003947b38> (NoMethodError)
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:17:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `class_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `configure'
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:1:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:591:in `block (2 levels) in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `block in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `run'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:150:in `block in tsort_each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:183:in `block (2 levels) in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:210:in `block (2 levels) in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:219:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:209:in `block in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:203:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:182:in `block in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:148:in `tsort_each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/application.rb:215:in `initialize!'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/paramisoft/learning/sample_app/config/environment.rb:5:in `<top (required)>'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `require'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `block in <main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+	from /home/paramisoft/learning/sample_app/config.ru:in `new'
+	from /home/paramisoft/learning/sample_app/config.ru:in `<main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `new_from_string'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:40:in `parse_file'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:277:in `build_app_and_options_from_config'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:199:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:48:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:314:in `wrapped_app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:75:in `start'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:76:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ reset
+[3g        H        H        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ resetails server
+=> Booting WEBrick
+=> Rails 4.0.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configuration.rb:95:in `method_missing': undefined method `action_mailer' for #<Rails::Application::Configuration:0x000000037abba8> (NoMethodError)
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:17:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `class_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `configure'
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:1:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:591:in `block (2 levels) in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `block in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `run'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:150:in `block in tsort_each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:183:in `block (2 levels) in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:210:in `block (2 levels) in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:219:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:209:in `block in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:203:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:182:in `block in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:148:in `tsort_each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/application.rb:215:in `initialize!'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/paramisoft/learning/sample_app/config/environment.rb:5:in `<top (required)>'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `require'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `block in <main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+	from /home/paramisoft/learning/sample_app/config.ru:in `new'
+	from /home/paramisoft/learning/sample_app/config.ru:in `<main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `new_from_string'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:40:in `parse_file'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:277:in `build_app_and_options_from_config'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:199:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:48:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:314:in `wrapped_app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:75:in `start'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:76:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$  [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample__app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplee_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplle_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/samplee_app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample__app$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_aapp$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_appp$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_appp$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$$ gem 'execjs'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command execjs
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$$ gem 'execjs'[C[Crails server[C[Cgem 'execjs'[C[C[Kgem 'execjs'[C[Crails server[K[K[K[K[K[K[K[K[K[K[K[Kbundale [K[K[K[Kle update 
+Fetching gem metadata from https://rubygems.org/..........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.2.0)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.9.2)
+Using atomic (1.1.16)
+Using thread_safe (0.3.1)
+Using tzinfo (0.3.39)
+Using activesupport (4.0.4)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.4)
+Using coffee-script-source (1.7.0)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.19.1)
+Using railties (4.0.4)
+Using coffee-rails (4.0.1)
+Using hike (1.2.3)
+Using jbuilder (1.0.2)
+Using jquery-rails (3.0.4)
+Using json (1.8.1)
+Installing libv8 (3.16.14.3)
+Using rdoc (3.12.2)
+Installing ref (1.0.5)
+Using sass (3.3.4)
+Using tilt (1.4.1)
+Using sprockets (2.12.0)
+Using sprockets-rails (2.0.1)
+Using sass-rails (4.0.1)
+Using sdoc (0.3.20)
+Using sqlite3 (1.3.8)
+Installing therubyracer (0.12.1)
+Using turbolinks (1.1.1)
+Using uglifier (2.1.1)
+Using bundler (1.5.3)
+[32mYour bundle is updated![0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$$ bundle update [K[K[K[K[K[K[Kinstall
+Using rake (10.2.0)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.9.2)
+Using atomic (1.1.16)
+Using thread_safe (0.3.1)
+Using tzinfo (0.3.39)
+Using activesupport (4.0.4)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.4)
+Using coffee-script-source (1.7.0)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.19.1)
+Using railties (4.0.4)
+Using coffee-rails (4.0.1)
+Using hike (1.2.3)
+Using jbuilder (1.0.2)
+Using jquery-rails (3.0.4)
+Using json (1.8.1)
+Using libv8 (3.16.14.3)
+Using rdoc (3.12.2)
+Using ref (1.0.5)
+Using sass (3.3.4)
+Using tilt (1.4.1)
+Using sprockets (2.12.0)
+Using sprockets-rails (2.0.1)
+Using sass-rails (4.0.1)
+Using sdoc (0.3.20)
+Using sqlite3 (1.3.8)
+Using therubyracer (0.12.1)
+Using turbolinks (1.1.1)
+Using uglifier (2.1.1)
+Using bundler (1.5.3)
+[32mYour bundle is complete![0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$$ bundle installupdate [C[C[2Pgem 'execjs'[C[Crails server[C[Cgem 'execjs'[C[Cbundle update install[C[C[Kbundle installupdate [C[C[2Pgem 'execjs'[C[Crails server[C[C[C[7Pesetails server[C[C[C[7Peset[C[C[2Pclsrs[K[K[Krails server[C[Cgem install execjs[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krails server
+=> Booting WEBrick
+=> Rails 4.0.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configuration.rb:95:in `method_missing': undefined method `action_mailer' for #<Rails::Application::Configuration:0x00000001636f40> (NoMethodError)
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:17:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `class_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `configure'
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:1:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:591:in `block (2 levels) in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `block in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `run'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:150:in `block in tsort_each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:183:in `block (2 levels) in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:210:in `block (2 levels) in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:219:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:209:in `block in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:203:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:182:in `block in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:148:in `tsort_each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/application.rb:215:in `initialize!'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/paramisoft/learning/sample_app/config/environment.rb:5:in `<top (required)>'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `require'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `block in <main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+	from /home/paramisoft/learning/sample_app/config.ru:in `new'
+	from /home/paramisoft/learning/sample_app/config.ru:in `<main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `new_from_string'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:40:in `parse_file'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:277:in `build_app_and_options_from_config'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:199:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:48:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:314:in `wrapped_app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:75:in `start'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:76:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$$ [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$  [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$  [K[A]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ [K]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ reset
+[3g        H        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ resetails server
+=> Booting WEBrick
+=> Rails 4.0.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configuration.rb:95:in `method_missing': undefined method `action_mailer' for #<Rails::Application::Configuration:0x00000000f62958> (NoMethodError)
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:17:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `class_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `configure'
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:1:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:591:in `block (2 levels) in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `block in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `run'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:150:in `block in tsort_each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:183:in `block (2 levels) in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:210:in `block (2 levels) in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:219:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:209:in `block in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:203:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:182:in `block in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:148:in `tsort_each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/application.rb:215:in `initialize!'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/paramisoft/learning/sample_app/config/environment.rb:5:in `<top (required)>'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `require'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `block in <main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+	from /home/paramisoft/learning/sample_app/config.ru:in `new'
+	from /home/paramisoft/learning/sample_app/config.ru:in `<main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `new_from_string'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:40:in `parse_file'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:277:in `build_app_and_options_from_config'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:199:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:48:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:314:in `wrapped_app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:75:in `start'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:76:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ rails server[7Pesetails server[7Pesetails server[7Peset
+[3g        H        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>^[OA]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ resetails server[7Peset[K[K[K[K[Krails server
+=> Booting WEBrick
+=> Rails 4.0.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+/home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configuration.rb:95:in `method_missing': undefined method `action_mailer' for #<Rails::Application::Configuration:0x00000001ee68e8> (NoMethodError)
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:17:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `class_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:24:in `configure'
+	from /home/paramisoft/learning/sample_app/config/environments/development.rb:1:in `<top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `block in require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:214:in `load_dependency'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/activesupport-4.0.4/lib/active_support/dependencies.rb:229:in `require'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:591:in `block (2 levels) in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/engine.rb:590:in `block in <class:Engine>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:30:in `run'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:150:in `block in tsort_each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:183:in `block (2 levels) in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:210:in `block (2 levels) in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:219:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:209:in `block in each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:203:in `each_strongly_connected_component_from'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:182:in `block in each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:180:in `each_strongly_connected_component'
+	from /home/paramisoft/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/tsort.rb:148:in `tsort_each'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/application.rb:215:in `initialize!'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/paramisoft/learning/sample_app/config/environment.rb:5:in `<top (required)>'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `require'
+	from /home/paramisoft/learning/sample_app/config.ru:3:in `block in <main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+	from /home/paramisoft/learning/sample_app/config.ru:in `new'
+	from /home/paramisoft/learning/sample_app/config.ru:in `<main>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `eval'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:49:in `new_from_string'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/builder.rb:40:in `parse_file'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:277:in `build_app_and_options_from_config'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:199:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:48:in `app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/server.rb:314:in `wrapped_app'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands/server.rb:75:in `start'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:76:in `block in <top (required)>'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+	from /home/paramisoft/.rvm/gems/ruby-2.0.0-p451/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+]0;paramisoft@paramisoft-Latitude-D530: ~/learning/sample_appparamisoft@paramisoft-Latitude-D530:~/learning/sample_app$ OArails server
+=> Booting WEBrick
+=> Rails 4.0.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
